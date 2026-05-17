@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fiches Droit — CPGE ECT1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,800;1,800&family=JetBrains+Mono:wght@500&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --bg:#13161c;--bg2:#181c24;--card:#1e232d;
+  --ink:#e7e9ee;--ink-soft:#b3b9c6;--ink-dim:#828a9b;
+  --line:rgba(255,255,255,.08);
+  --def:#a78bfa;--def-bg:rgba(167,139,250,.10);--def-line:rgba(167,139,250,.34);
+  --mec:#2dd4bf;--mec-bg:rgba(45,212,191,.10);--mec-line:rgba(45,212,191,.34);
+}
+html,body{min-height:100vh;background:var(--bg);color:var(--ink);font-family:'Source Sans 3',system-ui,sans-serif;display:flex;align-items:center;justify-content:center;padding:40px 20px;}
+.wrap{max-width:480px;width:100%;}
+.kicker{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--def);margin-bottom:14px;}
+h1{font-family:'Playfair Display',serif;font-size:38px;font-weight:800;line-height:1.05;margin-bottom:10px;}
+h1 em{font-style:italic;color:var(--def);}
+.sub{color:var(--ink-soft);font-size:15px;margin-bottom:36px;}
+.cards{display:flex;flex-direction:column;gap:14px;}
+a.card{display:block;text-decoration:none;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 24px;transition:border-color .18s,background .18s;}
+a.card:hover,a.card:active{background:var(--bg2);}
+a.card.fiche{border-color:var(--def-line);}
+a.card.rappel{border-color:var(--mec-line);}
+.card-tag{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;margin-bottom:8px;}
+.fiche .card-tag{color:var(--def);}
+.rappel .card-tag{color:var(--mec);}
+.card-title{font-size:20px;font-weight:600;color:var(--ink);margin-bottom:5px;}
+.card-desc{font-size:13.5px;color:var(--ink-dim);}
+.arrow{float:right;font-size:20px;margin-top:2px;opacity:.5;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="kicker">CPGE ECT1 · Économie-Droit</div>
+  <h1>Fiches <em>Droit</em></h1>
+  <p class="sub">Programme 2025-2026 — Incrément 1.B2</p>
+  <div class="cards">
+    <a class="card fiche" href="Fiche_Droit_v1.html">
+      <span class="arrow">→</span>
+      <div class="card-tag">Étage 1 — Fiche source</div>
+      <div class="card-title">Fiche Droit</div>
+      <div class="card-desc">Définitions verbatim, articles de loi, jurisprudence, méthodes.</div>
+    </a>
+    <a class="card rappel" href="Rappel_Droit_v1.html">
+      <span class="arrow">→</span>
+      <div class="card-tag">Étage 2 — Récupération active</div>
+      <div class="card-title">Rappel Droit</div>
+      <div class="card-desc">Questions-déclencheurs, auto-évaluation su / à revoir.</div>
+    </a>
+  </div>
+</div>
+</body>
+</html>
